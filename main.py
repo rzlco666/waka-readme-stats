@@ -500,7 +500,7 @@ def get_stats(github):
         stats = stats + generate_language_per_repo(repositoryList) + '\n\n'
 
     if showLocChart.lower() in truthy:
-        stats += '**' + translate['Timeline'] + '**\n\n'
+        #stats += '**' + translate['Timeline'] + '**\n\n'
         branch_name = github.get_repo(f'{username}/{username}').default_branch
         stats = stats + '![Chart not found](https://raw.githubusercontent.com/' + username + '/' + username + '/' + branch_name + '/charts/bar_graph.png) \n\n'
 
